@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  each video in videos
+    p #{video.id}
+    p #{video.snippet.title}
+    p #{video.statistics.viewCount}
